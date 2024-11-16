@@ -37,10 +37,10 @@ public class ScreenSoundMusicasApplication implements CommandLineRunner {
 			mostraMenu();
 			opcaoMenu = scanner.nextInt();
 			switch (opcaoMenu) {
-				case OPCAO_MENU_CADASTRAR_ARTISTA: cadastrarArtista(); break;
-				case OPCAO_MENU_CADASTRAR_MUSICAS: cadastrarMusica(); break;
-				case OPCAO_MENU_LISTAR_MUSICAS: listarMusicas(); break;
-				case OPCAO_MENU_BUSCAR_MUSICAS_POR_ARTISTAS: buscarMusicasPorArtista(); break;
+				case OPCAO_MENU_CADASTRAR_ARTISTA -> cadastrarArtista();
+				case OPCAO_MENU_CADASTRAR_MUSICAS -> cadastrarMusica();
+				case OPCAO_MENU_LISTAR_MUSICAS -> listarMusicas();
+				case OPCAO_MENU_BUSCAR_MUSICAS_POR_ARTISTAS -> buscarMusicasPorArtista();
 			}
 		}
 		while (opcaoMenu != 0);
